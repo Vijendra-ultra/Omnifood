@@ -1,0 +1,267 @@
+/* ************************************************** */
+/* General styles  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+    color: #333333;
+    line-height: 1.2;
+    font-size: 2rem;
+}
+
+p {
+    color: #868e96;
+    font-size: 1.8rem;
+}
+
+.How-it-works--heading,
+.Heading--primary,
+.tertiary-heading {
+  
+    font-weight: 600;
+    
+    margin-bottom: 2.4rem; 
+}
+
+/* Reusable grid */
+.grid {
+    display: grid;
+    /* gap: 9.6rem; */
+}
+.grid-gap {
+    gap:4.8rem;
+}
+
+
+.col--2-grid {
+    grid-template-columns: 1fr 1fr;
+}
+.col--3-grid {
+    grid-template-columns: repeat(3,1fr);
+}
+
+.align-grid {
+    align-items: center;
+}
+/* Reusable flexbox */
+.flex {
+    display: flex;
+}
+.align-center {
+    align-items: center;
+    justify-content: center;
+}
+
+/* Reusable position blocks */
+
+.relative--box {
+    position: relative;
+    z-index: 1;
+}
+
+/* ************************************************** */
+
+/* Header section *******************************/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:70px;
+    background-color: #F7F7F7;
+}
+
+.Company--logo {
+    color: #333;
+    margin-left: 3.2rem;
+    font-size: 3.2rem;
+}
+
+ul li {
+    list-style:none;
+   
+}
+
+.nav--link {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.navigation-item:link,
+.navigation-item:visited {
+    text-decoration: none;
+    color: #333;
+    font-weight: 550;
+    padding: 0.8rem 1.2rem ;
+    transition: all 0.3s;
+}
+
+.navigation-item:active,
+.navigation-item:hover {
+    cursor: pointer;
+    padding: 0.8rem 1.2rem ;
+    background-color: #adb5bd;
+    border-radius: 5px;
+}
+.navigation-item.last-item {
+    margin-right: 3.6rem;
+    padding: 1.2rem 2.4rem ;
+    background-color: #f0ff;
+    border-radius: 5px;
+}
+.navigation-item.last-item:link,
+.navigation-item.last-item:visited {
+    color: #fff;
+}
+
+.navigation-item.last-item:hover,
+.navigation-item.last-item:active {
+    color: #f0ff;
+    background-color: #fff;
+}
+
+/* **********Header section style ends**************** */
+
+
+/* *************************************************************** */
+/* Hero section styles **************************/
+.hero--section  {
+    background-color: #F7F7F7;
+    padding:9.6rem 0;
+}
+.Hero {
+    max-width: 130rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    align-items: center;
+    gap:8.4rem;
+
+    /* This is used to make layout to not to touch the screen */
+    padding: 0 3.2rem;
+}
+
+.hero-image {
+    max-width: 30vw;
+    min-width: 400px;
+    mix-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Heading--primary {
+    font-size: 5.2rem;
+    color: #333333;
+    
+    letter-spacing: -0.5px;
+    
+}
+
+.hero-desc {
+    line-height: 1.5;
+    margin-bottom: 2.4rem;
+}
+
+
+.btn {
+    text-decoration: none;
+    font-size: 2.2rem;
+    padding:1.2rem 2.4rem;
+    border: 2px solid #B0C4DE;
+    border-radius: 8px;
+    background-color: #FF6F3C;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+   
+}
+
+/* **********Hero section  style ends**************** */
+
+
+/* ********** How it works section************* */
+.Section-2 {
+    background-color: #F7F7F7;
+    padding: 0 3.0rem;
+}
+
+.How-it-works {
+    max-width: 130rem;
+    
+    margin: 9.6rem auto;
+    
+}
+
+.How-it-works--heading {
+    font-size: 3.6rem;
+    font-family: "Playfair Display",serif;
+    color: #FF6F3C;
+}
+.tertiary-heading {
+    color: #333333;
+    font-size: 3.0rem;
+
+}
+
+.box {
+    margin-bottom: 2.4rem;
+}
+.How-it-works-img {
+    width:30%;
+}
+
+.No-features {
+    font-size:9.6rem;
+    color: #ffe2d8;
+    
+}
+
+.blob-container {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.blob-container svg {
+    max-width: 48rem;
+    height: 60rem;
+    
+    
+}
+
+.Second {
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+}
+.Second svg {
+    width: 140%;
+}
+
+.float {  
+    animation-name: ani-float;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; 
+  }
+ 
+  @keyframes ani-float {
+    0% { transform: translate(0,  0px); }
+    50% { transform: translate(0, 15px); }
+    100% { transform: translate(0, -0px); }    
+  }
+
+/* **********How it works style ends**************** */
+/* ************************************************** */
